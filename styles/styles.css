@@ -1,0 +1,1220 @@
+body {
+  background-image: url(https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80);
+  background-color: black;
+}
+/* <!-- the sun --> */
+.sun {
+  width: 250px;
+  background: radial-gradient(
+    ellipse farthest-corner at 25px 25px,
+    rgb(211, 12, 12) 10px,
+    yellow 30%,
+    orange 50%
+  );
+  border-radius: 50%;
+  aspect-ratio: 1;
+  background-image: url(https://media.hswstatic.com/eyJidWNrZXQiOiJjb250ZW50Lmhzd3N0YXRpYy5jb20iLCJrZXkiOiJnaWZcL3N1bi11cGRhdGUtMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjI5MH19fQ==);
+
+  box-shadow: -2px 1px 20px 20px rgb(232 232 39);
+  position: absolute;
+  top: 30px;
+  right: 120px;
+  transform: scale(1);
+  animation: pulse 6s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+  }
+
+  70% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+@media (max-width: 600px) {
+  .sun {
+    position: absolute;
+    right: 80px;
+  }
+}
+/* <!-- sun shimmers --> */
+.sun-shimmer {
+  width: 300px;
+
+  aspect-ratio: 1;
+
+  border-radius: 50%;
+
+  background: radial-gradient(
+    ellipse farthest-corner at 300px 0px,
+    rgb(238, 238, 44),
+    rgb(216, 238, 76),
+    rgb(230, 227, 76),
+    orange,
+    rgb(229, 229, 208),
+    yellow 100%,
+    white
+  );
+
+  box-shadow: -2px 1px 20px 20px rgb(232 232 39);
+  position: absolute;
+  top: 0px;
+  right: 84px;
+
+  opacity: 0.2;
+  transform: scale(1);
+  animation: pulse 6s infinite;
+}
+
+@media (max-width: 600px) {
+  .sun-shimmer {
+    position: absolute;
+    right: 60px;
+  }
+}
+
+.sun-shimmer2 {
+  width: 400px;
+
+  aspect-ratio: 1;
+
+  border-radius: 50%;
+
+  background: radial-gradient(
+    ellipse farthest-corner at 300px 0px,
+    rgb(238, 238, 44),
+    rgb(216, 238, 76),
+    rgb(230, 227, 76),
+    orange,
+    rgb(229, 229, 208),
+    yellow 100%,
+    white
+  );
+
+  box-shadow: -2px 1px 20px 20px rgb(232 232 39);
+  position: absolute;
+  top: 0px;
+  right: 84px;
+  transform: rotate(135deg);
+  opacity: 0.15;
+  transform: scale(1);
+  animation: pulse 6s infinite;
+}
+
+.sun-shimmer3 {
+  width: 500px;
+
+  aspect-ratio: 1;
+
+  border-radius: 50%;
+
+  background: radial-gradient(
+    ellipse farthest-corner at 300px 0px,
+    rgb(44, 225, 238),
+    rgb(104, 155, 170),
+    rgb(76, 168, 230),
+    rgb(0, 153, 255),
+    rgb(229, 229, 208),
+    yellow 100%,
+    white
+  );
+  box-shadow: -2px 1px 20px 20px rgb(232 232 39);
+  box-shadow: inset 2px -6px 15px 0px;
+  position: absolute;
+  top: 0px;
+  right: 84px;
+  transform: rotate(135deg);
+  opacity: 0.1;
+  transform: scale(1);
+  animation: pulse 6s infinite;
+}
+
+.sun-shimmer4 {
+  width: 600px;
+
+  aspect-ratio: 1;
+
+  border-radius: 50%;
+
+  background: radial-gradient(
+    ellipse farthest-corner at 300px 0px,
+    rgb(238, 238, 44),
+    rgb(216, 238, 76),
+    rgb(230, 227, 76),
+    orange,
+    rgb(229, 229, 208),
+    yellow 100%,
+    white
+  );
+  box-shadow: -2px 1px 20px 20px rgb(232, 84, 39);
+  box-shadow: inset 2px -6px 15px 0px;
+  position: absolute;
+  top: 0px;
+  right: 84px;
+  transform: rotate(135deg);
+  opacity: 0.1;
+  transform: scale(1);
+  animation: pulse 6s infinite;
+}
+
+.sun-shimmer5 {
+  width: 750px;
+
+  aspect-ratio: 1;
+
+  border-radius: 50%;
+
+  background: radial-gradient(
+    ellipse farthest-corner at 300px 0px,
+    rgb(238, 238, 44),
+    rgb(216, 238, 76),
+    rgb(230, 227, 76),
+    orange,
+    rgb(229, 229, 208),
+    yellow 100%,
+    white
+  );
+  box-shadow: -2px 1px 20px 20px rgb(232 232 39);
+  box-shadow: inset 2px -6px 15px 0px;
+  position: absolute;
+  top: 0px;
+  right: 84px;
+  transform: rotate(135deg);
+  opacity: 0.1;
+  transform: scale(1);
+  animation: pulse 6s infinite;
+}
+
+.sun-shimmer6 {
+  width: 900px;
+
+  aspect-ratio: 1;
+
+  border-radius: 50%;
+
+  background: radial-gradient(
+    ellipse farthest-corner at 300px 0px,
+    rgb(238, 238, 44),
+    rgb(216, 238, 76),
+    rgb(230, 227, 76),
+    orange,
+    rgb(229, 229, 208),
+    yellow 100%,
+    white
+  );
+
+  box-shadow: inset 2px -6px 15px 0px;
+  position: absolute;
+  top: 0px;
+  right: 84px;
+  transform: rotate(135deg);
+  opacity: 0.05;
+  transform: scale(1);
+  animation: pulse 6s infinite;
+}
+
+.sun-shimmer7 {
+  width: 1100px;
+
+  aspect-ratio: 1;
+
+  border-radius: 50%;
+
+  background: radial-gradient(
+    ellipse farthest-corner at 300px 0px,
+    rgb(238, 238, 44),
+    rgb(216, 238, 76),
+    rgb(230, 227, 76),
+    orange,
+    rgb(229, 229, 208),
+    yellow 100%,
+    white
+  );
+
+  box-shadow: inset 2px -6px 15px 0px;
+  position: absolute;
+  top: 0px;
+  right: 84px;
+  transform: rotate(135deg);
+  opacity: 0.05;
+  transform: scale(1);
+  animation: pulse 6s infinite;
+}
+
+.sun-shimmer8 {
+  width: 1300px;
+
+  aspect-ratio: 1;
+
+  border-radius: 50%;
+
+  background: radial-gradient(
+    ellipse farthest-corner at 300px 0px,
+    rgb(238, 238, 44),
+    rgb(216, 238, 76),
+    rgb(230, 227, 76),
+    orange,
+    rgb(229, 229, 208),
+    yellow 100%,
+    white
+  );
+
+  box-shadow: inset 2px -6px 15px 0px;
+  position: absolute;
+  top: 0px;
+  right: 84px;
+  transform: rotate(135deg);
+  opacity: 0.05;
+  transform: scale(1);
+  animation: pulse 4s infinite;
+}
+
+/* <!--the planets --> */
+.mini-planet {
+  width: 20px;
+  aspect-ratio: 1;
+
+  border-radius: 50%;
+
+  background-image: radial-gradient(
+    ellipse farthest-corner at 25px 25px,
+    orange,
+    25%,
+    rgb(143, 143, 39),
+    rgb(175, 186, 113),
+    rgb(221, 209, 159),
+    rgb(102, 102, 69),
+    rgb(56, 58, 16),
+    rgb(169, 120, 31),
+    yellow 100%,
+    white
+  );
+
+  box-shadow: inset 2px -6px 15px 0px;
+  position: absolute;
+  top: 175px;
+  right: 260px;
+  transform: rotate(310deg);
+}
+
+@media (max-width: 600px) {
+  .mini-planet {
+    position: absolute;
+    right: 205px;
+    top: 190px;
+  }
+}
+
+.planet {
+  width: 25px;
+  aspect-ratio: 1;
+
+  border-radius: 50%;
+
+  background-image: radial-gradient(
+    ellipse farthest-corner at 25px 25px,
+    orange,
+    25%,
+    yellow,
+    rgb(175, 186, 113),
+    rgb(221, 209, 159),
+    rgb(102, 102, 69),
+    rgb(56, 58, 16),
+    rgb(169, 120, 31),
+    yellow 100%,
+    white
+  );
+
+  box-shadow: inset 2px -6px 15px 0px;
+  position: absolute;
+  top: 205px;
+  right: 300px;
+  transform: rotate(25deg);
+}
+
+@media (max-width: 600px) {
+  .planet {
+    position: absolute;
+    right: 212px;
+  }
+}
+
+.planet1 {
+  width: 39px;
+  aspect-ratio: 1;
+
+  border-radius: 50%;
+
+  background-image: radial-gradient(
+    ellipse farthest-corner at 25px 25px,
+    rgb(217, 233, 235),
+    25%,
+    rgb(143, 187, 189),
+    rgb(62, 121, 139),
+    rgb(51, 71, 138),
+    rgb(102, 102, 69),
+    rgb(22, 84, 95),
+    rgb(31, 153, 169),
+    rgb(18, 23, 90) 100%,
+    rgb(69, 59, 124)
+  );
+
+  box-shadow: inset 18px 0px 15px 0px;
+  position: absolute;
+  top: 225px;
+  right: 340px;
+  transform: rotate(330deg);
+}
+
+@media (max-width: 600px) {
+  .planet1 {
+    position: absolute;
+    right: 220px;
+  }
+}
+
+.planet2 {
+  width: 65px;
+  aspect-ratio: 1;
+
+  border-radius: 50%;
+
+  background-image: radial-gradient(
+    ellipse farthest-corner at 15px 15px,
+    rgb(201, 171, 117),
+    rgb(207, 169, 154),
+    rgb(177, 134, 42),
+    rgb(179, 108, 26),
+    rgb(138, 101, 54),
+    rgb(194, 158, 92),
+    rgb(131, 80, 60),
+    yellow 100%,
+    rgb(199, 13, 13)
+  );
+
+  box-shadow: inset 0px -19px 15px 0px;
+  position: absolute;
+  top: 250px;
+  right: 390px;
+  transform: rotate(80deg);
+}
+
+@media (max-width: 600px) {
+  .planet2 {
+    position: absolute;
+    right: 230px;
+  }
+}
+
+.planet3 {
+  width: 105px;
+  aspect-ratio: 1;
+
+  border-radius: 50%;
+
+  background-image: radial-gradient(
+    ellipse farthest-corner at 15px 15px,
+    rgba(177, 219, 177, 0.952),
+    rgb(153, 196, 149),
+    rgb(33, 145, 51),
+    rgb(5, 167, 19),
+    rgb(23, 104, 16),
+    rgb(56, 58, 16),
+    rgb(18, 105, 44),
+    rgb(4, 68, 7) 100%,
+    rgb(7, 90, 39)
+  );
+
+  box-shadow: inset 3px -20px 15px 0px;
+  position: absolute;
+  top: 280px;
+  right: 460px;
+  transform: rotate(80deg);
+}
+
+@media (max-width: 600px) {
+  .planet3 {
+    position: absolute;
+    right: 245px;
+  }
+}
+
+.planet4 {
+  width: 150px;
+  aspect-ratio: 1;
+
+  border-radius: 50%;
+
+  background-image: radial-gradient(
+    ellipse farthest-corner at 5px 5px,
+    rgb(223, 197, 150),
+    rgb(187, 174, 130),
+    rgb(129, 108, 63),
+    rgb(179, 108, 26),
+    rgb(138, 101, 54),
+    rgb(194, 158, 92),
+    rgb(116, 45, 17),
+    rgb(94, 94, 22) 100%,
+    rgb(199, 13, 13)
+  );
+
+  box-shadow: inset -12px -20px 15px 0px;
+  position: absolute;
+  top: 320px;
+  right: 555px;
+  transform: rotate(90deg);
+}
+
+@media (max-width: 600px) {
+  .planet4 {
+    position: absolute;
+    right: 250px;
+  }
+}
+
+.planet6 {
+  width: 240px;
+  aspect-ratio: 1;
+
+  border-radius: 50%;
+
+  background-image: radial-gradient(
+    ellipse farthest-corner at 50px 20px,
+    rgb(242, 242, 230),
+    rgb(241, 243, 216),
+    rgb(175, 186, 113),
+    rgb(221, 209, 159),
+    rgb(102, 102, 69),
+    rgb(56, 58, 16),
+    rgb(60, 48, 25),
+    rgb(94, 94, 14) 100%,
+    rgb(17, 15, 15)
+  );
+
+  box-shadow: inset -18px -20px 19px 0px;
+  position: absolute;
+  top: 350px;
+  right: 690px;
+  transform: rotate(100deg);
+}
+
+@media (max-width: 600px) {
+  .planet6 {
+    position: absolute;
+    right: 275px;
+  }
+}
+
+/* <!-- planet ring --> */
+
+.ring {
+  width: 600px;
+  height: 60px;
+  aspect-ratio: 1;
+
+  border-radius: 50%;
+
+  background: radial-gradient(
+    ellipse farthest-corner at 300px 0px,
+    rgb(73, 73, 47),
+    rgb(64, 71, 21),
+    rgb(105, 104, 54),
+    rgb(206, 239, 17),
+    rgb(203, 71, 31),
+    rgb(229, 229, 208),
+    rgb(104, 108, 30),
+    rgb(94, 69, 23),
+    yellow 100%,
+    white
+  );
+
+  box-shadow: inset 2px -6px 15px 0px;
+  position: absolute;
+  top: 445px;
+  right: 520px;
+  transform: rotate(310deg);
+  opacity: 0.5;
+  z-index: 6;
+}
+
+@media (max-width: 600px) {
+  .ring {
+    position: absolute;
+    right: 90px;
+    transform: rotate(335deg);
+  }
+}
+
+/* <!-- shimmer pulses from the sun --> */
+
+.shimmer1 {
+  width: 1000px;
+  height: 50px;
+  aspect-ratio: 1;
+
+  border-radius: 40%;
+
+  background: radial-gradient(
+    ellipse farthest-corner at 300px 0px,
+    rgb(238, 238, 44),
+    rgb(216, 238, 76),
+    rgb(230, 227, 76),
+    orange,
+    rgb(229, 229, 208),
+    yellow 100%,
+    white
+  );
+
+  box-shadow: inset 2px -6px 15px 0px;
+  position: absolute;
+  top: 212px;
+  right: 250px;
+  transform: rotate(176deg);
+  opacity: 0.2;
+}
+
+@media (max-width: 600px) {
+  .shimmer1 {
+    opacity: 0;
+  }
+}
+
+.shimmer2 {
+  width: 1000px;
+  height: 50px;
+  aspect-ratio: 1;
+
+  border-radius: 40%;
+
+  background: radial-gradient(
+    ellipse farthest-corner at 300px 0px,
+    rgb(238, 238, 44),
+    rgb(216, 238, 76),
+    rgb(230, 227, 76),
+    orange,
+    rgb(229, 229, 208),
+    yellow 100%,
+    white
+  );
+
+  box-shadow: inset 2px -6px 15px 0px;
+  position: absolute;
+  top: 286px;
+  right: 250px;
+  transform: rotate(346deg);
+  opacity: 0.2;
+}
+
+@media (max-width: 600px) {
+  .shimmer2 {
+    opacity: 0;
+  }
+}
+.shimmer3 {
+  width: 1000px;
+  height: 50px;
+  aspect-ratio: 1;
+
+  border-radius: 40%;
+
+  background: radial-gradient(
+    ellipse farthest-corner at 300px 0px,
+    rgb(238, 238, 44),
+    rgb(216, 238, 76),
+    rgb(230, 227, 76),
+    orange,
+    rgb(229, 229, 208),
+    yellow 100%,
+    white
+  );
+
+  box-shadow: inset 2px -6px 15px 0px;
+  position: absolute;
+  top: 483px;
+  right: 145px;
+  transform: rotate(141deg);
+  opacity: 0.2;
+}
+
+@media (max-width: 600px) {
+  .shimmer3 {
+    opacity: 0;
+  }
+}
+
+.shimmer4 {
+  width: 1000px;
+  height: 50px;
+  aspect-ratio: 1;
+
+  border-radius: 40%;
+
+  background: radial-gradient(
+    ellipse farthest-corner at 300px 0px,
+    rgb(238, 238, 44),
+    rgb(216, 238, 76),
+    rgb(230, 227, 76),
+    orange,
+    rgb(229, 229, 208),
+    yellow 100%,
+    white
+  );
+
+  box-shadow: inset 2px -6px 15px 0px;
+  position: absolute;
+  top: 483px;
+  right: 145px;
+  transform: rotate(141deg);
+  opacity: 0.2;
+}
+
+@media (max-width: 600px) {
+  .shimmer4 {
+    opacity: 0;
+  }
+}
+
+.shimmer5 {
+  width: 1000px;
+  height: 50px;
+  aspect-ratio: 1;
+
+  border-radius: 40%;
+
+  background: radial-gradient(
+    ellipse farthest-corner at 300px 0px,
+    rgb(238, 238, 44),
+    rgb(216, 238, 76),
+    rgb(230, 227, 76),
+    orange,
+    rgb(229, 229, 208),
+    yellow 100%,
+    white
+  );
+
+  box-shadow: inset 2px -6px 15px 0px;
+  position: absolute;
+  top: 525px;
+  right: 116px;
+  transform: rotate(135deg);
+  opacity: 0.2;
+}
+
+@media (max-width: 600px) {
+  .shimmer5 {
+    opacity: 0;
+  }
+}
+
+.shimmer6 {
+  width: 1000px;
+  height: 50px;
+  aspect-ratio: 1;
+
+  border-radius: 40%;
+
+  background: radial-gradient(
+    ellipse farthest-corner at 300px 0px,
+    rgb(238, 238, 44),
+    rgb(216, 238, 76),
+    rgb(230, 227, 76),
+    orange,
+    rgb(229, 229, 208),
+    yellow 100%,
+    white
+  );
+
+  box-shadow: inset 2px -6px 15px 0px;
+  position: absolute;
+  top: 661px;
+  right: 107px;
+  transform: rotate(305deg);
+  opacity: 0.2;
+}
+
+@media (max-width: 600px) {
+  .shimmer6 {
+    opacity: 0;
+  }
+}
+
+.shimmer7 {
+  width: 1000px;
+  height: 50px;
+  aspect-ratio: 1;
+
+  border-radius: 40%;
+
+  background: radial-gradient(
+    ellipse farthest-corner at 300px 0px,
+    rgb(238, 238, 44),
+    rgb(216, 238, 76),
+    rgb(230, 227, 76),
+    orange,
+    rgb(229, 229, 208),
+    yellow 100%,
+    white
+  );
+
+  box-shadow: inset 2px -6px 15px 0px;
+  position: absolute;
+  top: 604px;
+  right: -17px;
+  transform: rotate(297deg);
+  opacity: 0.2;
+}
+
+@media (max-width: 600px) {
+  .shimmer7 {
+    opacity: 0;
+  }
+}
+
+.shimmer8 {
+  width: 1000px;
+  height: 50px;
+  aspect-ratio: 1;
+
+  border-radius: 40%;
+
+  background: radial-gradient(
+    ellipse farthest-corner at 300px 0px,
+    rgb(238, 238, 44),
+    rgb(216, 238, 76),
+    rgb(230, 227, 76),
+    orange,
+    rgb(229, 229, 208),
+    yellow 100%,
+    white
+  );
+
+  box-shadow: inset 2px -6px 15px 0px;
+  position: absolute;
+  top: 147px;
+  right: 250px;
+  transform: rotate(182deg);
+  opacity: 0.2;
+}
+
+@media (max-width: 600px) {
+  .shimmer8 {
+    opacity: 0;
+  }
+}
+
+/* <!-- triangular shimmers from the sun --> */
+
+.triangle2 {
+  width: 100;
+  height: 100;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  border-bottom: 1200px solid rgb(255, 225, 0);
+  position: absolute;
+  top: 100px;
+  right: 400px;
+  transform: rotate(29deg);
+  opacity: 0.1;
+  transition: background-color 0.5s ease;
+}
+
+@media (max-width: 600px) {
+  .triangle2 {
+    opacity: 0;
+  }
+}
+
+.triangle3 {
+  width: 100;
+  height: 100;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  border-bottom: 1200px solid rgb(255, 238, 0);
+  position: absolute;
+  top: 160px;
+  right: 231px;
+  transform: rotate(13deg);
+  opacity: 0.1;
+}
+
+@media (max-width: 600px) {
+  .triangle3 {
+    opacity: 0;
+  }
+}
+
+.triangle4 {
+  width: 100;
+  height: 100;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  border-bottom: 1200px solid rgb(225, 255, 0);
+  position: absolute;
+  top: 169px;
+  right: 45px;
+  transform: rotate(353deg);
+  opacity: 0.1;
+}
+
+@media (max-width: 600px) {
+  .triangle4 {
+    opacity: 0;
+  }
+}
+
+/* <!-- svg arcs (shadow around the planet ring) --> */
+
+.svg1 {
+  transform: rotate(295deg);
+  position: absolute;
+  top: 200px;
+  right: 568px;
+  filter: blur(5px);
+}
+
+.svg2 {
+  transform: rotate(36deg);
+  position: absolute;
+  top: 445px;
+  right: 470px;
+  filter: blur(5px);
+}
+
+.svg3 {
+  transform: rotate(27deg);
+  position: absolute;
+  top: 415px;
+  right: 465px;
+  filter: blur(8px);
+}
+
+.svg4 {
+  transform: rotate(23deg);
+  position: absolute;
+  top: 439px;
+  right: 408px;
+  filter: blur(5px);
+}
+
+/* <!-- asteroids --> */
+
+.ast1 {
+  width: 30px;
+  aspect-ratio: 1;
+
+  border-radius: 50%;
+
+  background-image: radial-gradient(
+    ellipse farthest-corner at 50px 20px,
+    rgb(242, 242, 230),
+    rgb(241, 243, 216),
+    rgb(175, 186, 113),
+    rgb(221, 209, 159),
+    rgb(102, 102, 69),
+    rgb(56, 58, 16),
+    rgb(60, 48, 25),
+    rgb(94, 94, 14) 100%,
+    rgb(17, 15, 15)
+  );
+
+  box-shadow: inset -9px -6px 20px 0px;
+  position: absolute;
+  top: 500px;
+  z-index: 7;
+  animation: aster1 10s linear infinite;
+}
+
+@keyframes aster1 {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
+@media (max-width: 600px) {
+  .ast1 {
+    animation: aster1 7s linear infinite;
+  }
+}
+
+.ast2 {
+  width: 25px;
+  aspect-ratio: 1;
+
+  border-radius: 50%;
+
+  background-image: radial-gradient(
+    ellipse farthest-corner at 50px 20px,
+    rgb(242, 242, 230),
+    rgb(241, 243, 216),
+    rgb(175, 186, 113),
+    rgb(221, 209, 159),
+    rgb(102, 102, 69),
+    rgb(56, 58, 16),
+    rgb(60, 48, 25),
+    rgb(94, 94, 14) 100%,
+    rgb(17, 15, 15)
+  );
+
+  box-shadow: inset -9px -6px 20px 0px;
+  position: absolute;
+  top: 550px;
+  z-index: 7;
+  animation: aster2 17s linear infinite;
+}
+
+@keyframes aster2 {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
+@media (max-width: 600px) {
+  .ast2 {
+    animation: aster1 10s linear infinite;
+  }
+}
+
+.ast3 {
+  width: 30px;
+  aspect-ratio: 1;
+
+  border-radius: 50%;
+
+  background-image: radial-gradient(
+    ellipse farthest-corner at 50px 20px,
+    rgb(242, 242, 230),
+    rgb(241, 243, 216),
+    rgb(175, 186, 113),
+    rgb(221, 209, 159),
+    rgb(102, 102, 69),
+    rgb(56, 58, 16),
+    rgb(60, 48, 25),
+    rgb(94, 94, 14) 100%,
+    rgb(17, 15, 15)
+  );
+
+  box-shadow: inset -9px -6px 20px 0px;
+  position: absolute;
+  top: 600px;
+  z-index: 7;
+  animation: aster3 19s linear infinite;
+}
+
+@keyframes aster3 {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+.ast4 {
+  width: 15px;
+  aspect-ratio: 1;
+
+  border-radius: 50%;
+
+  background-image: radial-gradient(
+    ellipse farthest-corner at 50px 20px,
+    rgb(242, 242, 230),
+    rgb(241, 243, 216),
+    rgb(175, 186, 113),
+    rgb(221, 209, 159),
+    rgb(102, 102, 69),
+    rgb(56, 58, 16),
+    rgb(60, 48, 25),
+    rgb(94, 94, 14) 100%,
+    rgb(17, 15, 15)
+  );
+
+  box-shadow: inset -9px -6px 20px 0px;
+  position: absolute;
+  top: 620px;
+  z-index: 7;
+  animation: aster4 21s linear infinite;
+}
+
+@keyframes aster4 {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
+.ast5 {
+  width: 40px;
+  aspect-ratio: 1;
+
+  border-radius: 50%;
+
+  background-image: radial-gradient(
+    ellipse farthest-corner at 50px 20px,
+    rgb(242, 242, 230),
+    rgb(241, 243, 216),
+    rgb(175, 186, 113),
+    rgb(221, 209, 159),
+    rgb(102, 102, 69),
+    rgb(56, 58, 16),
+    rgb(60, 48, 25),
+    rgb(94, 94, 14) 100%,
+    rgb(17, 15, 15)
+  );
+
+  box-shadow: inset -9px -6px 20px 0px;
+  position: absolute;
+  top: 650px;
+  z-index: 7;
+  animation: aster5 22s linear infinite;
+}
+
+@keyframes aster5 {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
+.ast6 {
+  width: 20px;
+  aspect-ratio: 1;
+
+  border-radius: 50%;
+
+  background-image: radial-gradient(
+    ellipse farthest-corner at 50px 20px,
+    rgb(242, 242, 230),
+    rgb(241, 243, 216),
+    rgb(175, 186, 113),
+    rgb(221, 209, 159),
+    rgb(102, 102, 69),
+    rgb(56, 58, 16),
+    rgb(60, 48, 25),
+    rgb(94, 94, 14) 100%,
+    rgb(17, 15, 15)
+  );
+
+  box-shadow: inset -9px -6px 20px 0px;
+  position: absolute;
+  top: 650px;
+  z-index: 7;
+  animation: aster6 23s linear infinite;
+}
+
+@keyframes aster6 {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
+.ast7 {
+  width: 20px;
+  aspect-ratio: 1;
+
+  border-radius: 50%;
+
+  background-image: radial-gradient(
+    ellipse farthest-corner at 50px 20px,
+    rgb(242, 242, 230),
+    rgb(241, 243, 216),
+    rgb(175, 186, 113),
+    rgb(221, 209, 159),
+    rgb(102, 102, 69),
+    rgb(56, 58, 16),
+    rgb(60, 48, 25),
+    rgb(94, 94, 14) 100%,
+    rgb(17, 15, 15)
+  );
+
+  box-shadow: inset -9px -6px 20px 0px;
+  position: absolute;
+  top: 670px;
+  z-index: 7;
+  animation: aster7 24s linear infinite;
+}
+
+@keyframes aster7 {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+.ast8 {
+  width: 20px;
+  aspect-ratio: 1;
+
+  border-radius: 50%;
+
+  background-image: radial-gradient(
+    ellipse farthest-corner at 50px 20px,
+    rgb(242, 242, 230),
+    rgb(241, 243, 216),
+    rgb(175, 186, 113),
+    rgb(221, 209, 159),
+    rgb(102, 102, 69),
+    rgb(56, 58, 16),
+    rgb(60, 48, 25),
+    rgb(94, 94, 14) 100%,
+    rgb(17, 15, 15)
+  );
+
+  box-shadow: inset -9px -6px 20px 0px;
+  position: absolute;
+  top: 700px;
+  z-index: 7;
+  animation: aster8 25s linear infinite;
+}
+
+@keyframes aster8 {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
+.ast9 {
+  width: 20px;
+  aspect-ratio: 1;
+
+  border-radius: 50%;
+
+  background-color: black;
+
+  box-shadow: inset -9px -6px 20px 0px;
+  position: absolute;
+  top: 400px;
+  z-index: 7;
+  animation: aster9 25s linear infinite;
+}
+
+@keyframes aster9 {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
